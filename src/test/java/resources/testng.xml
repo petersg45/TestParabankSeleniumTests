@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ParabankAutomationSuite">
+
+    <listeners>
+        <listener class-name="parabank.utils.RetryListener"/>
+    </listeners>
+
+    <test name="FunctionalTests">
+        <classes>
+            <class name="parabank.tests.LoginTest"/>
+            <class name="parabank.tests.RegisterTest"/>
+        </classes>
+    </test>
+
+</suite>
