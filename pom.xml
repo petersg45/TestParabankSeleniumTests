@@ -46,6 +46,10 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <outputDirectory>target/classes</outputDirectory>
+        <testOutputDirectory>target/test-classes</testOutputDirectory>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -55,6 +59,8 @@
                 <configuration>
                     <source>11</source>
                     <target>11</target>
+                    <release>11</release>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
 
